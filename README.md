@@ -1,52 +1,33 @@
-# Internal Unity Packages
-
-This repository serves as a catalog for Unity packages developed in-house at Created by Catalyst. These packages have been created with the intention of being reusable across multiple projects, improving efficiency and maintainability of our codebase.
-
-## Packages
-
-Here you will find a brief description of each package currently in this repository:
-
-1. **CustomTweens:** The CustomTweens package provides a framework of abstract classes for creating customizable, reusable tweening behaviors in Unity, using the powerful DOTween library.
-2. **InputReaders:** A generic input reader for creating customizable and scalable input sytems.
-
-> Note: Each package has its own README file inside its directory where you can find more detailed information.
->
-## Getting Started
-
-To use any of these packages, download the package you need and import it into your Unity project. Each package comes with its own set of instructions included in its directory.
+# CustomTweens
+- [Home](https://github.com/Created-by-Catalyst/Internal-Unity-Packages/tree/development)
 
 ## Requirements
+### DOTween
+DOTween (short for "Do Tween") is a fast, efficient, fully type-safe object-oriented animation engine for Unity, optimized for C# users. It's an evolution of HOTween, another popular tween engine.
 
-To use any of the Created by Catalyst packages, you will need to generate a GitHub Public Access Token (PAT) and add it to Unity.
+> [!note] Tweening is a term that comes from "in-betweening" and is used in animation to describe the process of generating intermediate frames between two images to give the appearance of the first image evolving smoothly into the second one.
 
-> Note: The following steps assume you have already created a Personal Access Token (PAT) in GitHub. If you have not, [see this doc](./PAT/README.md) on how to create a PAT.
+## Core
+### CustomTween
+Built on top of DOTween, the CustomTween script adds a interaction layer to any number of tween scripts. 
 
-1. Once you have your PAT, copy it to your clipboard.
+The script provides functions to start the animation (`Play()`), reverse it (`Reverse()`), stop it (`Stop()`), restart it (`Restart()`) and play it from the beginning (`PlayFromStart()`). It also includes methods to set (`SetOrigin()`) and reset to (`ResetToOrigin()`) the initial state of the animation.
 
-2. In Unity, open the Package Manager by navigating to `Window -> Package Manager`.
 
-3. Click on the '+' button located at the top-left corner of the Package Manager window, and select `Add package from git URL...`.
-
-4. In the pop-up text field, enter the HTTPS URL of your private GitHub repository, replacing the `https://` protocol with `https://PAT@`. Do not include any spaces. The final URL should look something like this: `https://PAT@github.com/YourUsername/YourRepo.git`.
-
-> Warning: Be careful not to share your PAT or expose it in public places, as it grants access to your private repositories. Treat it like a password.
-
-1. Hit `Enter` or click `Add`. Unity should now start importing your private package.
-
-Remember to replace `PAT` in the URL with your actual PAT.
-
-## Contributing
-
-Contributions to improve or extend these packages are always welcome. If you're a member of Created by Catalyst team and you've developed a new package that you believe should be shared, please follow these steps:
-
-1. Document your package. Ensure that it includes a README with instructions on how to install and use the package.
-2. Add your package to the appropriate directory in this repository.
-3. Update this main README to include a brief description of your package in the Packages list.
-
-For bug fixes, improvements, or new features to existing packages, please create a new branch, make your changes, and submit a pull request.
-
-## License
-
-These packages are proprietary software, only for use within Created by Catalyst projects unless otherwise agreed.
+### CustomTweenTemplate
+`CustomTweenTemplate` is an abstract class serving as a base for creating specific tween behaviors in Unity using the DOTween library. It defines the essential methods and properties for tweening, including play, reverse, stop, and restart methods, along with setting and resetting to the origin state. Any class inheriting from this template should provide implementation for these functionalities.
 
 ---
+## Library
+
+#### General Tweens
+
+#### TweenMoveToTarget
+The `TweenMoveToTarget` script is designed to animate a GameObject's movement from its initial position to a specified target position over a certain duration.
+
+### UI Tweens
+> [!note] All UI tween scripts should have a class name that starts TweenUI!
+
+#### TweenUIImageFade
+`TweenUIImageFade` is a script that controls the image's opacity, letting you animate it fading in or out over a specified duration. It includes methods to start, stop, reverse, and restart the fading animation.
+
