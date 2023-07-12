@@ -1,7 +1,7 @@
 {
     "name": "com.createdbycatalyst.customtweens",
     "version": "0.0.1",
-    "displayName": "Created by Catalyst/Custom Tweens",
+    "displayName": "CbC - Custom Tweens",
     "description": "The CustomTweens package provides a framework of abstract classes for creating customizable, reusable tweening behaviors in Unity, using the powerful DOTween library.",
     "unity": "2021.2",
     "dependencies": {},
