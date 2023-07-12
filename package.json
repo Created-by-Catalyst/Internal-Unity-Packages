@@ -1,0 +1,31 @@
+{
+
+    "name": "com.createdbycatalyst.unityeventsextension",
+    
+    "version": "0.0.1",
+    
+    "displayName": "CbC - Unity Events Extension",
+    
+    "description": "nity Additional Events Package extends Unity's event handling, enabling sequenced events, collision events, toggle events, and more.",
+    
+    "unity": "2021.2",
+    
+    "dependencies": {},
+    
+    "keywords": ["Utility", "Events"],
+    
+    "repository": {
+    
+    "type": "git",
+    
+    "url": "https://github.com/Created-by-Catalyst/Internal-Unity-Packages.git#UnityEventsExtenion"
+    
+    },
+    
+    "unityPackage": {
+    
+    "exportPath": "CreatedbyCatalyst-UnityEventsExtension.unitypackage"
+    
+    }
+    
+    }
