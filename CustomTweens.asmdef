@@ -1,7 +1,7 @@
 {
     "name": "CustomTweens",
     "rootNamespace": "",
-    "references": ["DOTween"],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
