@@ -5,7 +5,6 @@
     "description": "The CustomTweens package provides a framework of abstract classes for creating customizable, reusable tweening behaviors in Unity, using the powerful DOTween library.",
     "unity": "2021.2",
     "dependencies": {
-        "com.demigiant.dotween": "1.2.705"
     },
     "keywords": ["Animations", "Tween", "DOTween"],
     "repository": {
