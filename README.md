@@ -6,7 +6,7 @@ This repository serves as a catalog for Unity packages developed in-house at Cre
 
 Here you will find a brief description of each package currently in this repository:
 
-1. **CustomTweens:** The CustomTweens package provides a framework of abstract classes for creating customizable, reusable tweening behaviors in Unity, using the powerful DOTween library.
+1. **[CustomTweens](https://github.com/Created-by-Catalyst/Internal-Unity-Packages/tree/CustomTweens):** The CustomTweens package provides a framework of abstract classes for creating customizable, reusable tweening behaviors in Unity, using the powerful DOTween library.
 2. **InputReaders:** A generic input reader for creating customizable and scalable input sytems.
 
 > Note: Each package has its own README file inside its directory where you can find more detailed information.
