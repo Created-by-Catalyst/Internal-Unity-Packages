@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,24 +20,31 @@ public class TweenUIImageFade : CustomTweenTemplate<Image, Color>
 
     protected override void Start()
     {
-        // Set the tweener and start state at the start of the script.
+        // Set the tweener and start state at the start of the script.        
         Tweener = imageToFade;
         StartState = Tweener.color;
         base.Start();
+    }
+
+    protected override void OnEnable()
+    {
+        Tweener = imageToFade;
+        StartState = Tweener.color;
+        base.OnEnable();
     }
 
     public override void Play()
     {
         // Stop any previous tween and start a new one to fade the Image's color.
         Stop();
-        Tweener.DOBlendableColor(new Color(StartState.r, StartState.g, StartState.b, fadeTo), duration);
+        Tweener.DOColor(new Color(StartState.r, StartState.g, StartState.b, fadeTo), duration);
     }
 
     public override void Reverse()
     {
         // Stop any previous tween and start a new one to reverse the Image's color fade.
         Stop();
-        Tweener.DOBlendableColor(StartState, duration);
+        Tweener.DOColor(StartState, duration);
     }
 
     public override void Stop()
@@ -49,15 +55,14 @@ public class TweenUIImageFade : CustomTweenTemplate<Image, Color>
 
     public override void Restart()
     {
-        // Stop the current tween and reset the Image's color.
-        Stop();
-        Tweener.color = StartState;
+        base.Restart();
     }
 
     // Define the methods for setting and resetting the origin.
     public override void SetOrigin()
     {
         // Set the starting color.
+        Tweener = imageToFade;
         StartState = Tweener.color;
     }
 
