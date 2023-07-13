@@ -1,16 +1,21 @@
 {
-    "name": "com.createdbycatalyst.inputreader",
-    "version": "0.0.1",
-    "displayName": "CbC - Input Reader",
-    "description": "The Input Reader package provides a streamlined solution for handling input events in Unity using the Unity Input System.",
-    "unity": "2021.2",
-    "dependencies": {},
-    "keywords": [ "Inputs", "Utility" ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Created-by-Catalyst/Internal-Unity-Packages.git#InputReader"
-    },
-    "unityPackage": {
-        "exportPath": "CreatedbyCatalyst-InputReader.unitypackage"
-    }
+  "name": "com.createdbycatalyst.inputreader",
+  "version": "0.0.1",
+  "displayName": "CbC - Input Reader",
+  "description": "The Input Reader package provides a streamlined solution for handling input events in Unity using the Unity Input System.",
+  "unity": "2021.2",
+  "dependencies": {
+    "com.createdbycatalyst.unityeventsextension": "https://github.com/Created-by-Catalyst/Internal-Unity-Packages.git#UnityEventsExtension"
+  },
+  "keywords": [
+    "Inputs",
+    "Utility"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Created-by-Catalyst/Internal-Unity-Packages.git#InputReader"
+  },
+  "unityPackage": {
+    "exportPath": "CreatedbyCatalyst-InputReader.unitypackage"
+  }
 }

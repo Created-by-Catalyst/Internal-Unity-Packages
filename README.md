@@ -6,8 +6,12 @@
 ### Unity Input System
 InputReader is built on top of the Unity Input System package, which must be installed in your Unity project.
 
+### Unity Events Extension
+[UnityEventsExtension](https://github.com/Created-by-Catalyst/Internal-Unity-Packages/tree/UnityEventsExtension) is built on top of the Unity events system, which must be installed in your Unity project.
+
+
 > [!note]
-> Make sure you have the Unity Input System package installed and configured in your project.
+> Make sure you have the Unity Input System package and Unity Events Extension package installed and configured in your project.
 
 ## Core
 
