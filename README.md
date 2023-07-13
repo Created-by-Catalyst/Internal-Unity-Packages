@@ -1,10 +1,10 @@
-# Input Readers
+# Input Reader
 - [Home](https://github.com/Created-by-Catalyst/Internal-Unity-Packages/tree/development)
 
 ## Requirements
 
 ### Unity Input System
-InputReaders is built on top of the Unity Input System package, which must be installed in your Unity project.
+InputReader is built on top of the Unity Input System package, which must be installed in your Unity project.
 
 > [!note]
 > Make sure you have the Unity Input System package installed and configured in your project.
