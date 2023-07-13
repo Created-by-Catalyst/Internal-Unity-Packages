@@ -1,0 +1,16 @@
+{
+    "name": "com.createdbycatalyst.inputreaders",
+    "version": "0.0.1",
+    "displayName": "CbC - Input Readers",
+    "description": "The Input Readers package provides a streamlined solution for handling input events in Unity using the Unity Input System.",
+    "unity": "2021.2",
+    "dependencies": {},
+    "keywords": [ "Inputs", "Utility" ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Created-by-Catalyst/Internal-Unity-Packages.git#InputReaders"
+    },
+    "unityPackage": {
+        "exportPath": "CreatedbyCatalyst-InputReaders.unitypackage"
+    }
+}
