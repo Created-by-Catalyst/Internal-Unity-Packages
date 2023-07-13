@@ -7,7 +7,8 @@ This repository serves as a catalog for Unity packages developed in-house at Cre
 Here you will find a brief description of each package currently in this repository:
 
 1. **[CustomTweens](https://github.com/Created-by-Catalyst/Internal-Unity-Packages/tree/CustomTweens):** The CustomTweens package provides a framework of abstract classes for creating customizable, reusable tweening behaviors in Unity, using the powerful DOTween library.
-2. **InputReaders:** A generic input reader for creating customizable and scalable input sytems.
+2. **[InputReader](https://github.com/Created-by-Catalyst/Internal-Unity-Packages/tree/InputReader):** The InputReader package provides a set of scripts, including the InputReader and InputEvent, to handle input events in Unity using the Unity Input System, allowing for easy integration and event-driven input handling.
+3. **[UnityEventsExtension](https://github.com/Created-by-Catalyst/Internal-Unity-Packages/tree/UnityEventsExtension):** Extends the functionality of Unity's event system with some utility scripts.
 
 > Note: Each package has its own README file inside its directory where you can find more detailed information.
 >
