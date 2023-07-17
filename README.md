@@ -27,5 +27,3 @@ The `InputEvent` class represents an individual input event associated with an `
 2. Attach the `InputReader` script to a GameObject in your scene.
 3. Assign the appropriate `InputActionAsset` and specify the action map name in the `InputData` component of the `InputReader` script.
 4. Configure the input events by adding `InputEvent` objects to handle specific actions and define the desired behavior using Unity events.
-
-Feel free to adjust and customize the readme as needed to provide more specific information about your InputReaders package.
