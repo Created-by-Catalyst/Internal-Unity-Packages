@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 // This is an abstract base class for creating a custom tween effect.
@@ -13,6 +14,12 @@ public abstract class CustomTweenTemplate<T1, T2> : CustomTween
     [Header("Set tween duration.")]
     // The length of time the tween effect should take to complete.
     [SerializeField] protected float duration = 1f;
+
+    [SerializeField] protected bool looping;
+
+    [SerializeField] protected LoopType loopType;
+
+    [SerializeField] protected AnimationCurve animationCurve = new AnimationCurve(new Keyframe(0, 0), new Keyframe(1,1));
 
     // Called when the script instance is being loaded.
     protected override void Start()
@@ -52,4 +59,5 @@ public abstract class CustomTweenTemplate<T1, T2> : CustomTween
     }
     public override void SetOrigin() { } // Set the initial state of the tween.
     public override void ResetToOrigin() { } // Reset the object to its initial state.
+
 }

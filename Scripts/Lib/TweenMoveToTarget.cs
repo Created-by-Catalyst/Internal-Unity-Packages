@@ -43,12 +43,6 @@ public class TweenMoveToTarget : CustomTweenTemplate<Transform, Vector3>
         Tweener.DOKill();
     }
 
-    public override void Restart()
-    {
-        // Stop the current tween and reset the Transform's position.
-        base.Restart();
-    }
-
     // Define the methods for setting and resetting the origin.
     public override void SetOrigin()
     {
