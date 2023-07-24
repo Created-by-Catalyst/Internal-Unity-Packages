@@ -73,3 +73,5 @@ Modify the color of a UI Image element over time, blending from the current colo
 #### TweenUIImageFade
 `TweenUIImageFade` is a script that controls the image's opacity, letting you animate it fading in or out over a specified duration. It includes methods to start, stop, reverse, and restart the fading animation.
 
+#### TweenUICanvasGroupFade
+Enables a CanvasGroup's opacity to be tweened between its original state and a target opacity.
