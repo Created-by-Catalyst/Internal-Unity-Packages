@@ -13,7 +13,7 @@ public abstract class CustomTweenTemplate<T1, T2> : CustomTween
 
     [Header("Set tween duration.")]
     // The length of time the tween effect should take to complete.
-    [SerializeField] protected float duration = 1f;
+    [SerializeField] public float duration = 1f;
 
     [SerializeField] protected bool looping;
 
@@ -25,14 +25,12 @@ public abstract class CustomTweenTemplate<T1, T2> : CustomTween
     protected override void Start()
     {
         // Set the initial state.
-        SetOrigin();
     }
 
     // Called when the script is enabled.
     protected override void OnEnable()
     {
         // Set the initial state.
-        SetOrigin();
     }
 
     // Called when the script is disabled.
